@@ -5,7 +5,7 @@ from sage.all_cmdline import *   # import sage library
 _sage_const_1 = Integer(1); _sage_const_7 = Integer(7); _sage_const_16 = Integer(16)
 import re
 import hashlib
-load("hastad.sage")
+load("other.sage")
 
 
 # parse values for n and c
@@ -16,19 +16,22 @@ ciphertexts = [int(i) for i in re.findall(r"c\s\=\s([0-9]+)", text)]
 
 # execute coppersmith method Hastad attach using assumption that broadcast
 # message was the same with linear padding adding sha1(n) in all instances
-consts = [int(hashlib.sha1(str(i)).hexdigest(), _sage_const_16 ) for i in moduli]
+consts = [int(hashlib.sha1(str(i)+'L').hexdigest(), _sage_const_16 ) for i in moduli]
+print [str(i) for i in moduli]
+print [_sage_const_1 ]*_sage_const_7 
 #print hashlib.sha1(str(moduli[0])).hexdigest()
 
-m = linear_padding(ciphertexts, moduli, [_sage_const_1 ]*_sage_const_7 , consts, e=_sage_const_7 )
+m = linearPaddingHastads(ciphertexts, moduli, [_sage_const_1 ]*_sage_const_7 , consts, e=_sage_const_7 )
 print m
-print decode(m)
+#print binascii.unhexlify(m)
+#print decode(m)
 
 
 '''
 e = 7
 
 #message = "tjctf{test}"
-message = "tjctf{h0rs3s_h4v3_lonG_l3gS}"
+message = "flag{Th15_1337_Msg_is_a_secret}"
 moduli = [random_prime(2^1024, proof=false) * random_prime(2^1024, proof=false) for i in range(e)]
 hashes = [int(hashlib.sha1(str(moduli[i])).hexdigest(), 16) for i in range(e)]
 ciphertexts = [pow(convert_to_int(message)+hashes[i], e, moduli[i]) for i in range(e)]
