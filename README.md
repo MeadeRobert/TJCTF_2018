@@ -132,7 +132,7 @@ The problem leaves us with a restricted python terminal and a hint regarding ref
 
 Solution: There are 2 colors of blue used in the image that are very close to one another. Use a bucket tool in paint with 100% selectivity to get the flag.
 
-*image link here*
+!(https://github.com/MeadeRobert/TJCTF_2018/blob/master/weird_logo/weird_logo_edited.png)
 
 ### Weird Audio Circuit
 
