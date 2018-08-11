@@ -54,7 +54,7 @@ This one is a stack exploit via buffer overflow that requires leaving a stack ca
 
 `nc problem1.tjctf.org 8008`
 
-[Video Writeup](https://www.youtube.com/edit?o=U&video_id=NbDZW0HQmf4)
+[Video Writeup](https://youtu.be/NbDZW0HQmf4)
 
 ## Web
 
@@ -140,6 +140,8 @@ Solution: There are 2 colors of blue used in the image that are very close to on
 
 [Audio](https://static.tjctf.org/c34e48ab19254a7fe95fff369d8dca5272f2a46f92e6c4ffef50d9b4de5e9cbc_problem.wav)
 
+[Videoo Writeup](https://youtu.be/ZLO1LipkSFc)
+
 The file contains an AM modulated audio signal with a carrier at 10Khz. Demodulate with the following nyquist script in audacity, and transcribe the flag starting at ~36 seconds in.
 
 [https://forum.audacityteam.org/viewtopic.php?t=95331](https://forum.audacityteam.org/viewtopic.php?t=95331)
@@ -151,7 +153,7 @@ The file contains an AM modulated audio signal with a carrier at 10Khz. Demodula
 
 Extract .7z file containing .pem file for RSA private key (for SSL traffic decryption) from FTP traffic in wireshark. Then, extract the flag.jpg file from the SSL traffic responding to the GET request for the flag image.
 
-[Video Writeup](https://www.youtube.com/edit?o=U&video_id=1uiYoRnXt0M)
+[Video Writeup](https://youtu.be/1uiYoRnXt0M)
 
 ## Cryptography
 
