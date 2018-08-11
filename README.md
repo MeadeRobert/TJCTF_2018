@@ -132,7 +132,7 @@ The problem leaves us with a restricted python terminal and a hint regarding ref
 
 Solution: There are 2 colors of blue used in the image that are very close to one another. Use a bucket tool in paint with 100% selectivity to get the flag.
 
-!(https://github.com/MeadeRobert/TJCTF_2018/blob/master/weird_logo/weird_logo_edited.png)
+![](https://github.com/MeadeRobert/TJCTF_2018/blob/master/weird_logo/weird_logo_edited.png)
 
 ### Weird Audio Circuit
 
@@ -140,7 +140,7 @@ Solution: There are 2 colors of blue used in the image that are very close to on
 
 [Audio](https://static.tjctf.org/c34e48ab19254a7fe95fff369d8dca5272f2a46f92e6c4ffef50d9b4de5e9cbc_problem.wav)
 
-[Videoo Writeup](https://youtu.be/ZLO1LipkSFc)
+[Video Writeup](https://youtu.be/ZLO1LipkSFc)
 
 The file contains an AM modulated audio signal with a carrier at 10Khz. Demodulate with the following nyquist script in audacity, and transcribe the flag starting at ~36 seconds in.
 
