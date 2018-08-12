@@ -118,9 +118,9 @@ root@DESKTOP-C400:/mnt/d/Google Drive/Documents/ctf/TJCTF_2018/trippy#
 
 `nc problem1.tjctf.org 8004`
 
-The problem leaves us with a restricted python terminal and a hint regarding reflection, a way to get possible attributes of object and/or functions at runtime in many languages.
+The problem leaves us with a restricted python terminal and a hint regarding reflection, a way to get possible attributes of object and/or functions at runtime in many languages. Once we locate the string we need to call a given get_flag() function with as an argument we must use python brainfuck to compose the string under the impressed input char restrictions. See the video writeup.
 
-[Video Writeup](todo)
+[Video Writeup](https://youtu.be/d3jTRhRo60U)
 
 ## Forensics
 
