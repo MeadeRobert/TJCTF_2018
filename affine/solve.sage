@@ -16,10 +16,9 @@ print [str(i) for i in moduli]
 print [1]*7
 #print hashlib.sha1(str(moduli[0])).hexdigest()
 
-m = linearPaddingHastads(ciphertexts, moduli, [1]*7, consts, e=7)
+m = linearPaddingHastads(ciphertexts, moduli, [1]*7, consts, e=7, eps=1.0/10.0)
 print m
-#print binascii.unhexlify(m)
-#print decode(m)
+print decode(m)
 
 
 '''

@@ -87,3 +87,15 @@ def testLinearPadding():
 		return True
 		
 #testLinearPadding()
+
+def decode(message):
+	m = ""
+	message = Integer(message)
+	
+	if message <= 0:
+		print Integer(message)
+	
+	while message > 0:
+		m = chr(message & 0xff) + m
+		message >>= 8
+	return m
